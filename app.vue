@@ -1,7 +1,8 @@
 <template>
   <div>
-    <Header />
+    <TheHeader />
+    <h1 class="font-bold text-2xl">Content</h1>
     <div class="main">Content</div>
-    <Footer />
+    <TheFooter />
   </div>
 </template>
