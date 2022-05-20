@@ -4,7 +4,9 @@
 
     <div class="main container mx-auto">
       <router-view />
+      <PostsList />
     </div>
+
     <TheFooter />
   </div>
 </template>

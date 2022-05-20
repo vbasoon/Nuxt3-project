@@ -11,12 +11,12 @@
             class="w-full object-cover h-full object-center block absolute inset-0 opacity-90"
             src="https://picsum.photos/600/300?random=1"
           />
-          <div
-            class="flex flex-col items-start relative z-10 text-white h-80 w-1/3"
-          >
-            <p class="topic">Новости</p>
-            <h2 class="text-2xl font-medium title-font mb-2">Shooting Stars</h2>
-            <p class="leading-relaxed text-white">
+          <div class="flex flex-col items-start z-10 text-white h-80 w-1/3">
+            <p class="top-0 topic">Новости</p>
+            <h2 class="title text-2xl font-medium title-font mb-2">
+              Shooting Stars
+            </h2>
+            <p class="leading-relaxed text-red">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere
               corrupti iste iure a deserunt nostrum praesentium, mollitia totam
               exercitationem eveniet ipsum? Facilis velit delectus ex amet.
@@ -24,6 +24,10 @@
               sit. Deserunt repellat optio, et, incidunt, ad vero atque dolores
               aut laborum sapiente aliquam quos iure.
             </p>
+            <div class="flex w-full info text-white mt-10">
+              <span class="mr-20">Author</span>
+              <span>Time mark</span>
+            </div>
           </div>
         </div>
         <div class="flex flex-wrap -mx-2">
@@ -37,12 +41,17 @@
                 src="https://picsum.photos/600/300?random=2"
               />
               <div class="text-center relative z-10 w-full">
+                <p class="top-0 topic">Истории</p>
                 <h2 class="text-xl font-medium title-font mb-2 text-white">
                   Shooting Stars
                 </h2>
                 <p class="leading-relaxed text-white">
                   Skateboard +1 mustache fixie paleo lumbersexual.
                 </p>
+                <div class="flex justify-between mt-10 w-full info text-white">
+                  <span class="mr-20">Author</span>
+                  <span>Time mark</span>
+                </div>
               </div>
             </div>
           </div>
@@ -56,12 +65,17 @@
                 src="https://picsum.photos/600/300?random=3"
               />
               <div class="text-center relative z-10 w-full">
+                <p class="top-0 topic">Блоги</p>
                 <h2 class="text-xl text-white font-medium title-font mb-2">
                   Shooting Stars
                 </h2>
                 <p class="leading-relaxed text-white">
                   Skateboard +1 mustache fixie paleo lumbersexual.
                 </p>
+                <div class="flex justify-between mt-10 w-full info text-white">
+                  <span class="mr-20">Author</span>
+                  <span>Time mark</span>
+                </div>
               </div>
             </div>
           </div>
@@ -126,6 +140,137 @@
   </section>
   <section class="text-gray-600 body-font">
     <h1 class="text-center font-bold text-2xl pt-4">Section 3</h1>
+    <div class="container px-5 py-24 mx-auto border-red-500 border-2">
+      <!-- component -->
+      <!-- This is an example component -->
+      <div class="max-w-2xl mx-auto">
+        <div id="default-carousel" class="relative" data-carousel="static">
+          <!-- Carousel wrapper -->
+          <div
+            class="overflow-hidden relative h-56 rounded-lg sm:h-64 xl:h-80 2xl:h-96"
+          >
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <span
+                class="absolute top-1/2 left-1/2 text-2xl font-semibold text-white -translate-x-1/2 -translate-y-1/2 sm:text-3xl dark:text-gray-800"
+                >First Slide</span
+              >
+              <img
+                src="https://flowbite.com/docs/images/carousel/carousel-1.svg"
+                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                alt="..."
+              />
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="https://flowbite.com/docs/images/carousel/carousel-2.svg"
+                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                alt="..."
+              />
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <img
+                src="https://flowbite.com/docs/images/carousel/carousel-3.svg"
+                class="block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2"
+                alt="..."
+              />
+            </div>
+          </div>
+          <!-- Slider indicators -->
+          <div
+            class="flex absolute bottom-5 left-1/2 z-30 space-x-3 -translate-x-1/2"
+          >
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 1"
+              data-carousel-slide-to="0"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 2"
+              data-carousel-slide-to="1"
+            ></button>
+            <button
+              type="button"
+              class="w-3 h-3 rounded-full"
+              aria-current="false"
+              aria-label="Slide 3"
+              data-carousel-slide-to="2"
+            ></button>
+          </div>
+          <!-- Slider controls -->
+          <button
+            type="button"
+            class="flex absolute top-0 left-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+            data-carousel-prev
+          >
+            <span
+              class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M15 19l-7-7 7-7"
+                ></path>
+              </svg>
+              <span class="hidden">Previous</span>
+            </span>
+          </button>
+          <button
+            type="button"
+            class="flex absolute top-0 right-0 z-30 justify-center items-center px-4 h-full cursor-pointer group focus:outline-none"
+            data-carousel-next
+          >
+            <span
+              class="inline-flex justify-center items-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+            >
+              <svg
+                class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                ></path>
+              </svg>
+              <span class="hidden">Next</span>
+            </span>
+          </button>
+        </div>
+
+        <p class="mt-5">
+          This carousel slider component is part of a larger, open-source
+          library of Tailwind CSS components. Learn more by going to the
+          official
+          <a
+            class="text-blue-600 hover:underline"
+            href="https://flowbite.com/docs/getting-started/introduction/"
+            target="_blank"
+            >Flowbite Documentation</a
+          >.
+        </p>
+        <!-- <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script> -->
+      </div>
+    </div>
   </section>
   <section class="text-gray-600 body-font">
     <h1 class="text-center font-bold text-2xl pt-4">Section 4</h1>

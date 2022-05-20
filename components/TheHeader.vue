@@ -6,7 +6,7 @@
       <div>
         <a
           rel="noopener noreferrer"
-          href="#"
+          href="/"
           class="flex justify-center space-x-3 lg:justify-start"
         >
           <div
@@ -50,7 +50,7 @@
         <li class="flex">
           <a
             rel="noopener noreferrer"
-            href="#"
+            href="/news"
             class="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent dark:text-violet-400 dark:border-violet-400"
             >Новости</a
           >
@@ -58,7 +58,7 @@
         <li class="flex">
           <a
             rel="noopener noreferrer"
-            href="#"
+            href="/stories"
             class="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent"
             >Истории</a
           >
@@ -66,9 +66,9 @@
         <li class="flex">
           <a
             rel="noopener noreferrer"
-            href="#"
+            href="/blog"
             class="flex items-center px-4 -mb-1 border-b-2 dark:border-transparent"
-            >Блог</a
+            >Блоги</a
           >
         </li>
       </ul>
@@ -121,7 +121,7 @@
 </template>
 
 <script setup>
-/* const links = [
+const links = [
   {
     id: 1,
     name: "Home",
@@ -147,8 +147,8 @@
     name: "Contact",
     path: "/contact",
   },
-]; */
-const links = ["Home", "About Us", "Pricing", "Blog", "Contact"];
+];
+//const links = ["Home", "About Us", "Pricing", "Blog", "Contact"];
 const activeLink = useState("activeLink", () => "Home");
 </script>
 
